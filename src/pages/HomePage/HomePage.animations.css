@@ -1,0 +1,43 @@
+:root {
+   --animation-time: 0.9s;
+}
+
+.appear-right {
+   opacity: 0;
+   transform: translateX(50px);
+   transition: all var(--animation-time) ease;
+}
+.appear-left {
+   opacity: 0;
+   transform: translateX(-50px);
+   transition: all var(--animation-time) ease;
+}
+
+.appear-top {
+   opacity: 0;
+   transform: translateY(-50px);
+   transition: all var(--animation-time) ease;
+}
+
+.appear-top-scale {
+   opacity: 0;
+   transform: translateY(-50px) scale(0.5);
+   transition: all var(--animation-time) ease;
+}
+
+.appear-bottom {
+   opacity: 0;
+   transform: translateY(50px);
+   transition: all var(--animation-time) ease;
+}
+
+.appear-bottom-scale {
+   opacity: 0;
+   transform: translateY(50px) scale(0.5);
+   transition: all var(--animation-time) ease;
+}
+
+.--show {
+   opacity: 1;
+   transform: translate(0, -20px) scale(1);
+}
